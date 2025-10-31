@@ -17,7 +17,7 @@ const translations = {
         language: "සිංහල"
     },
     ta: {
-        appHeading: "Sunova AI உதவியாளர்",
+        appHeading: "Sunova AI",
         appSubHeading: "தயவுசெய்து ஒரு மொழியைத் தேர்ந்தெடுக்கவும்",
         langLabel: "மொழி:",
         placeholder: "உங்கள் செய்தியை இங்கே தட்டச்சு செய்யவும்...",
@@ -25,7 +25,7 @@ const translations = {
         language: "தமிழ்"
     },
     en: {
-        appHeading: "Sunova AI Assistant",
+        appHeading: "Sunova AI",
         appSubHeading: "Please select a language",
         langLabel: "Language:",
         placeholder: "Type your message here...",
@@ -225,3 +225,4 @@ themeToggleBtn.addEventListener("click", () => {
   themeToggleBtn.textContent = isLightTheme ? "dark_mode" : "light_mode";
 
 });
+
