@@ -89,7 +89,7 @@ body {
 
 /* Chats Container */
 .chats-container {
-  flex-grow: 1;
+  flex-grow: 0.8;
   overflow-y: auto;
   padding: 15px 0;
   display: flex;
@@ -210,4 +210,5 @@ body.bot-responding #send-prompt-btn {
     height: 100vh;
     border-radius: 0;
   }
+
 }
