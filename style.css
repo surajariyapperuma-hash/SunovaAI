@@ -162,7 +162,7 @@ body {
   padding: 8px 15px;
 }
 .prompt-input {
-  flex-grow: 1;
+  flex-grow: 0.9;
   border: none;
   outline: none;
   background: transparent;
@@ -212,4 +212,5 @@ body.bot-responding #send-prompt-btn {
   }
 
 }
+
 
