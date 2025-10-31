@@ -9,7 +9,7 @@ const initialMessage = document.querySelector("#initial-msg");
 // --- Translation Data ---
 const translations = {
     si: {
-        appHeading: "Sunova AI සහයක",
+        appHeading: "Sunova AI",
         appSubHeading: "කරුණාකර භාෂාවක් තෝරන්න",
         langLabel: "භාෂාව:",
         placeholder: "ඔබගේ පණිවිඩය මෙහි ටයිප් කරන්න...",
@@ -223,4 +223,5 @@ themeToggleBtn.addEventListener("click", () => {
   const isLightTheme = document.body.classList.toggle("light-theme");
   localStorage.setItem("themeColor", isLightTheme ? "light_mode" : "dark_mode");
   themeToggleBtn.textContent = isLightTheme ? "dark_mode" : "light_mode";
+
 });
