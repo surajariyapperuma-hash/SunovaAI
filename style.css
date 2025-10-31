@@ -39,7 +39,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 700px;
+  max-width: 600px;
   height: 90vh;
   background: var(--secondary-color);
   border-radius: 15px;
@@ -212,3 +212,4 @@ body.bot-responding #send-prompt-btn {
   }
 
 }
+
