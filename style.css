@@ -88,3 +88,34 @@ body.light .msg.bot{background:#fbfdff;border:1px solid #eef2ff;color:#0b1220}
   .chat{max-height:calc(100vh - 320px)}
   .logo{width:48px;height:48px}
 }
+/* Very small screens (e.g., phones) */
+@media (max-width: 500px) {
+  body {
+    padding: 5px; /* තවත් padding අඩු කිරීම */
+  }
+  .app {
+    padding: 8px;
+  }
+
+  /* Chat input එක සකස් කිරීම */
+  .composer {
+    flex-direction: column; /* Input එක උඩිනුත්, buttons යටිනුත් තැබීම */
+    gap: 10px;
+  }
+  .input {
+    width: 100%;
+  }
+  .composer-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Stop සහ Send බොත්තම් දෙපැත්තට කිරීම */
+  }
+  .btn.primary {
+    flex-grow: 1; /* Send button එක විශාල කිරීම */
+  }
+  .header {
+    flex-direction: column; /* Header එක උඩ යට සකස් කිරීම */
+    gap: 14px;
+    align-items: flex-start;
+  }
+}
