@@ -82,11 +82,12 @@ body.light .msg.user{box-shadow:0 6px 20px rgba(37,99,235,0.08)}
 body.light .msg.bot{background:#fbfdff;border:1px solid #eef2ff;color:#0b1220}
 
 /* Responsive */
-@media (max-width:880px){
-  .main{grid-template-columns:1fr;gap:12px}
-  .left-panel{order:2;height:140px}
-  .chat{max-height:calc(100vh - 320px)}
-  .logo{width:48px;height:48px}
+@media (max-width: 880px) {
+  .main { grid-template-columns: 1fr; gap: 12px; }
+  /* 'order: 2;' ඉවත් කළ විට, එය උඩින් පෙන්වයි */
+  .left-panel { height: auto; } 
+  .chat { max-height: calc(100vh - 320px); }
+  .logo { width: 48px; height: 48px; }
 }
 /* Very small screens (e.g., phones) */
 @media (max-width: 500px) {
