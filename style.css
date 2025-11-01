@@ -1,0 +1,90 @@
+:root{
+  --bg: #0b1020;
+  --card: #0f172a;
+  --muted: #94a3b8;
+  --text: #e6eef8;
+  --accent: #2563eb; /* blue accent */
+  --accent-2: #60a5fa;
+  --glass: rgba(255,255,255,0.03);
+  --radius: 14px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:linear-gradient(180deg,#061029 0%, #071028 60%);color:var(--text)}
+body{padding:20px;display:flex;align-items:center;justify-content:center}
+
+/* App */
+.app{width:100%;max-width:1100px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:18px;padding:18px;box-shadow:0 10px 40px rgba(2,6,23,0.6)}
+
+/* Header */
+.header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:56px;height:56px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 6px 20px rgba(37,99,235,0.18)}
+.logo-svg{filter:drop-shadow(0 4px 20px rgba(37,99,235,0.25))}
+.brand-text h1{margin:0;font-size:18px}
+.brand-text p{margin:0;color:var(--muted);font-size:13px}
+
+/* Controls */
+controls{display:flex;gap:8px;align-items:center}
+select#lang-select{padding:8px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(#A9A9A9)color: #000000; /* අකුරු සඳහා තද කළු පැහැය */
+  background: #ffffff;}
+.icon-btn{background:transparent;border:0;padding:8px;border-radius:10px;cursor:pointer;color:var(--muted)}
+
+/* Layout */
+main{display:grid;grid-template-columns:300px 1fr;gap:18px;align-items:start}
+.left-panel{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);height:calc(100vh - 160px);overflow:auto}
+.panel-section{margin-bottom:12px}
+.panel-section.small{font-size:13px;padding-top:8px;border-top:1px dashed rgba(255,255,255,0.02)}
+
+/* Suggestions */
+.suggestions{display:flex;flex-direction:column;gap:8px}
+.suggestion{padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.02);background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.015));cursor:pointer;font-size:14px;color:var(--text);transition:transform .15s ease, box-shadow .15s ease}
+.suggestion:hover{transform:translateY(-4px);box-shadow:0 8px 26px rgba(2,6,23,0.6)}
+
+/* Chat panel */
+.chat-panel{display:flex;flex-direction:column;gap:12px}
+.chat{padding:16px;border-radius:12px;min-height:420px;max-height:calc(100vh - 260px);overflow:auto;display:flex;flex-direction:column;gap:12px}
+
+/* Messages */
+.msg{max-width:78%;padding:12px;border-radius:12px;line-height:1.45;word-wrap:break-word;white-space:pre-wrap}
+.msg.user{align-self:flex-end;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;border-bottom-right-radius:6px;box-shadow:0 8px 26px rgba(37,99,235,0.15)}
+.msg.bot{align-self:flex-start;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);color:var(--text)}
+
+/* typing indicator */
+.typing {display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:12px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.02);width:max-content}
+.typing .icon {width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;box-shadow:0 6px 20px rgba(37,99,235,0.18)}
+.typing .dots {display:inline-flex;gap:6px;align-items:center}
+.dots span{display:block;width:6px;height:6px;border-radius:50%;background:white;opacity:0.85;transform:translateY(0);animation:blink 1s infinite ease-in-out}
+.dots span:nth-child(2){animation-delay:0.15s}
+.dots span:nth-child(3){animation-delay:0.3s}
+@keyframes blink{0%{transform:translateY(0);opacity:0.3}50%{transform:translateY(-6px);opacity:1}100%{transform:translateY(0);opacity:0.3}}
+
+/* Composer */
+.composer{display:flex;gap:8px;align-items:center;padding:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
+.input{flex:1;border:1px solid rgba(255,255,255,0.03);padding:12px;border-radius:10px;font-size:14px;background:transparent;color:var(--text)}
+.attach{cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:8px;border-radius:10px;border:1px dashed rgba(255,255,255,0.03);color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 12px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white}
+.btn.ghost{background:transparent;border:0;color:var(--muted)}
+
+/* Footer */
+.footer{font-size:13px;color:var(--muted);padding-top:6px}
+
+/* Light theme overrides */
+body.light{background:linear-gradient(180deg,#f6f9ff 0%, #f8fafc 100%);color:#0b1220}
+body.light .app{background:#ffffff;box-shadow:0 10px 30px rgba(2,6,23,0.06)}
+body.light .left-panel{background:#fff;padding:16px;border:1px solid #eef2ff}
+body.light .chat{background:transparent}
+body.light .msg.user{box-shadow:0 6px 20px rgba(37,99,235,0.08)}
+body.light .msg.bot{background:#fbfdff;border:1px solid #eef2ff;color:#0b1220}
+
+/* Responsive */
+@media (max-width:880px){
+  .main{grid-template-columns:1fr;gap:12px}
+  .left-panel{order:2;height:140px}
+  .chat{max-height:calc(100vh - 320px)}
+  .logo{width:48px;height:48px}
+}
