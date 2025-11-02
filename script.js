@@ -32,7 +32,7 @@ const LOCALES = {
     suggestions: [
       'Why is it necessary to learn ICT?',
       'How will learning ICT be useful to me as a school student in the future?',
-      'Is learning ICT during school useful for finding a suitable job after finishing school?',
+    
     ],
     thinking: 'Thinking...'
   },
@@ -41,7 +41,7 @@ const LOCALES = {
     suggestions: [
       'ICT ඉගෙනීම අවශ්‍ය වන්නේ ඇයි?',
       'අනාගතයේදී ICT ඉගෙනීම පාසල් සිසුවකු ලෙස මට ප්‍රයෝජනවත් වන්නේ කෙසේද?',
-      'පාසල් කාලයෙදි ict ඉගෙන ගැනිම පාසල් ගමන අවසන් කළ පසු සුදුසු රැකියාවක් සොයා ගැනීමට ප්‍රයෝජනවත් වේද?',
+     
     ],
     thinking: 'සිතමින්...'
   },
@@ -50,7 +50,6 @@ const LOCALES = {
     suggestions: [
       ' ICT படிப்பது ஏன் முக்கியம்?',
       'ഭാவிയിൽ ஒரு വിദ്യാർത്ഥിയെന്ന നിലയിൽ ICT கற்றுக் கொள்வது എനിക്ക് എങ്ങനെ പ്രയോജനകരമാകും?',
-      'பள்ளிப் பருவத்தில் ICT (தகவல் மற்றும் தொடர்பாடல் தொழில்நுட்பம்) கற்றுக் கொள்வது, பள்ளிப் படிப்பை முடித்த பிறகு பொருத்தமான வேலை தேட உதவியாக இருக்குமா?'
     ],
     thinking: 'கணிக்கும்...'
   }
