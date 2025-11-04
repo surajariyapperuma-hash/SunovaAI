@@ -54,14 +54,15 @@
     </header>
 
     <main class="main">
-      <aside class="left-panel">
-        <div class="panel-section">
-          <h3 id="suggestions-title">Quick prompts</h3>
-          <div id="suggestions" class="suggestions"></div>
-        </div>
-	
-
-      </aside>
+  <section class="chat-panel" role="main" aria-live="polite">
+    <div id="suggestions-wrap" class="panel-section suggestions-wrap">
+      <h3 id="suggestions-title">Quick prompts</h3>
+      <div id="suggestions" class="suggestions"></div>
+    </div>
+    
+    <div id="chat" class="chat" aria-label="Chat messages"></div>
+    
+    </section>
 
       <section class="chat-panel" role="main" aria-live="polite">
         <div id="chat" class="chat" aria-label="Chat messages"></div>
