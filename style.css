@@ -99,15 +99,18 @@ body.light .suggestion {color: #0b1220; /* Light theme එකේදී භාව
     padding:12px;
     margin-bottom:0;
   }
-  .main{
-    grid-template-columns:1fr;
-    gap:12px;
+.main{
+    /* .main එකේ grid-template-columns ඉවත් කර ඇත */
+    gap:12px; /* මෙය 18px විය හැක, නමුත් 12px තබන්න */
     padding: 0 12px 12px 12px;
   }
-  .left-panel{
-    order:2;
-    height:140px;
-    padding:16px;
+  /* .left-panel සඳහා වූ සියලු styles ඉවත් කරන්න */
+  
+  /* suggestions-wrap එකේ උස සීමා කිරීම */
+  .suggestions-wrap{
+    max-height:160px; /* මොබයිල් තිරයේ වැඩි ඉඩක් chat එකට දීමට */
+    padding:14px;
+  }
   }
   .chat{
     padding:16px;
