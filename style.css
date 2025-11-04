@@ -34,9 +34,9 @@ select#lang-select{padding:8px;border-radius:10px;border:1px solid rgba(255,255,
 .icon-btn{background:transparent;border:0;padding:8px;border-radius:10px;cursor:pointer;color:var(--muted)}
 
 /* Layout */
-main{display:grid;grid-template-columns:300px 1fr;gap:18px;align-items:stretch;flex:1;min-height:0}
-.left-panel{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);overflow:auto}
-.panel-section{margin-bottom:12px}
+/* Layout එක දැන් තනි තීරුවක් ලෙස සකසා ඇත */
+main{display:flex;flex-direction:column;gap:18px;align-items:stretch;flex:1;min-height:0} 
+/* .left-panel සඳහා වූ style එක ඉවත් කරන්න */
 .panel-section.small{font-size:13px;padding-top:8px;border-top:1px dashed rgba(255,255,255,0.02)}
 
 /* Suggestions */
@@ -111,11 +111,35 @@ body.light .suggestion {color: #0b1220; /* Light theme එකේදී භාව
   }
   
   /* suggestions-wrap එකේ උස සීමා කිරීම */
-  .suggestions-wrap{
-    max-height:160px; /* මොබයිල් තිරයේ වැඩි ඉඩක් chat එකට දීමට */
-    padding:14px;
-  }
-  }
+/* Quick Prompts සඳහා නව styles */
+.suggestions-wrap{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding:16px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.03);
+  overflow:auto; 
+}
+
+/* Quick Prompts ටික තිරස් අතට පෙන්වීමට */
+.suggestions{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); /* එක තීරුවක ප්‍රශ්න කිහිපයක් පෙන්වයි */
+  gap:10px
+}
+
+/* Chat window එකට දැන් background එකක් අවශ්‍යයි */
+.chat-panel{display:flex;flex-direction:column;gap:18px;overflow:hidden;flex:1}
+.chat{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); 
+  padding:16px;
+  border-radius:12px;
+  overflow:auto;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  flex:1;
+  min-height:0;
+}
   .chat{
     padding:16px;
   }
