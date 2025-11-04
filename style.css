@@ -104,7 +104,11 @@ body.light .suggestion {color: #0b1220; /* Light theme එකේදී භාව
     gap:12px; /* මෙය 18px විය හැක, නමුත් 12px තබන්න */
     padding: 0 12px 12px 12px;
   }
-  /* .left-panel සඳහා වූ සියලු styles ඉවත් කරන්න */
+  .left-panel{
+    order:2;
+    height:140px;
+    padding:16px;
+  }
   
   /* suggestions-wrap එකේ උස සීමා කිරීම */
   .suggestions-wrap{
